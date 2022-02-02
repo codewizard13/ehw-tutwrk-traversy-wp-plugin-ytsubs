@@ -87,6 +87,9 @@ class Youtube_Subs_Widget extends WP_Widget {
                 class="widefat"
                 id="<?php echo esc_attr( $this->get_field_id( 'layout' ) ); ?>" 
                 name="<?php echo esc_attr( $this->get_field_name( 'layout' ) ); ?>">
+
+				<option value="default" <?php echo ($layout == 'default') ? 'selected' : '';
+
 			</select>
 		</p>
 		
