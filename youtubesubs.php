@@ -18,7 +18,7 @@ if (!defined('ABSPATH')) {
 require_once(plugin_dir_path(__FILE__).'/includes/youtubesubs-scripts.php');
 
 // Load Class
-require_once(plugin_dir_path(__FILE__).'/includes/youtubesubs-class.php');
+require_once(plugin_dir_path(__FILE__).'/includes/youtubesubs.class.php');
 
 // Register Widget
 function register_youtubesubs() {
@@ -27,3 +27,5 @@ function register_youtubesubs() {
 
 // Hook in function
 add_action ('widgets_init', 'register_youtubesubs');
+
+/* WORKS SO FAR -- Basic "Hello World" plugin */
