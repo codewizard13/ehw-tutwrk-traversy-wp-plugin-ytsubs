@@ -95,6 +95,8 @@ class Youtube_Subs_Widget extends WP_Widget {
 		
 		$instance['title'] = ( ! empty( $new_instance['title'] ) ) ? sanitize_text_field( $new_instance['title'] ) : '';
 
+		$instance['channel'] = ( ! empty( $new_instance['channel'] ) ) ? sanitize_text_field( $new_instance['channel'] ) : '';
+
 		return $instance;
 	}
 
