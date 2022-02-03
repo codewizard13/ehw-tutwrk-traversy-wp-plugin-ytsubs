@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Adds Foo_Widget widget.
+ * Adds YouTube_Subs widget.
  */
 class Youtube_Subs_Widget extends WP_Widget {
 
@@ -113,8 +113,8 @@ class Youtube_Subs_Widget extends WP_Widget {
 				<option value="default" <?php echo ($count == 'default') ? 'selected' : ''; ?>>
 					Default
 				</option>
-				
-				<option value="hiddden" <?php echo ($count == 'hidden') ? 'selected' : ''; ?>>
+							
+				<option value="hidden" <?php echo ($count == 'hidden') ? 'selected' : ''; ?>>
 					Hidden
 				</option>
 
