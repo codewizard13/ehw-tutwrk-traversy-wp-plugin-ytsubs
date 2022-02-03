@@ -102,21 +102,21 @@ class Youtube_Subs_Widget extends WP_Widget {
 		
 		<!-- COUNT -->
 		<p>
-            <label for="<?php echo esc_attr( $this->get_field_id( 'layout' ) ); ?>">
-                <?php esc_attr_e( 'Layout:', 'yts_domain' ); ?>
+            <label for="<?php echo esc_attr( $this->get_field_id( 'count' ) ); ?>">
+                <?php esc_attr_e( 'Count:', 'yts_domain' ); ?>
             </label>
 
             <select 
                 class="widefat"
-                id="<?php echo esc_attr( $this->get_field_id( 'layout' ) ); ?>" 
-                name="<?php echo esc_attr( $this->get_field_name( 'layout' ) ); ?>">
+                id="<?php echo esc_attr( $this->get_field_id( 'count' ) ); ?>" 
+                name="<?php echo esc_attr( $this->get_field_name( 'count' ) ); ?>">
 
-				<option value="default" <?php echo ($layout == 'default') ? 'selected' : ''; ?>>
+				<option value="default" <?php echo ($count == 'default') ? 'selected' : ''; ?>>
 					Default
 				</option>
 				
-				<option value="full" <?php echo ($layout == 'full') ? 'selected' : ''; ?>>
-					Full
+				<option value="hiddden" <?php echo ($count == 'hidden') ? 'selected' : ''; ?>>
+					Hidden
 				</option>
 
 			</select>
