@@ -32,7 +32,7 @@ class Youtube_Subs_Widget extends WP_Widget {
 
         // Widget Content Output
 		// echo esc_html__( 'Hello, World!', 'yts_domain' );
-        echo '<div class="g-ytsubscribe" data-channelid=' . $instance['channel'] .' data-layout=' . $instance['layout'] . ' data-count="default"></div>';
+        echo '<div class="g-ytsubscribe" data-channelid='.$instance['channel'].' data-layout='.$instance['layout'].' data-count='.$instance['count'].'></div>';
 
 		echo $args['after_widget']; // Whatever you want to display AFTER widget (<div>, etc)
 	}
@@ -46,7 +46,6 @@ class Youtube_Subs_Widget extends WP_Widget {
 	 */
 	public function form( $instance ) {
 		$title = ! empty( $instance['title'] ) ? $instance['title'] : esc_html__( 'YouTube Subs', 'yts_domain' );
-		
 		$channel = ! empty( $instance['channel'] ) ? $instance['channel'] : esc_html__( 'UCp93Jok5b2D4-LbIM4ZNNqA', 'yts_domain' );
 		$layout = ! empty( $instance['layout'] ) ? $instance['layout'] : esc_html__( 'default', 'yts_domain' );
 		$count = ! empty( $instance['count'] ) ? $instance['count'] : esc_html__( 'default', 'yts_domain' );		
@@ -144,7 +143,7 @@ class Youtube_Subs_Widget extends WP_Widget {
 		$instance['layout'] = ( ! empty( $new_instance['layout'] ) ) ? sanitize_text_field( $new_instance['layout'] ) : '';
 
 		$instance['count'] = ( ! empty( $new_instance['count'] ) ) ? sanitize_text_field( $new_instance['count'] ) : '';
-		
+
 		return $instance;
 	}
 
