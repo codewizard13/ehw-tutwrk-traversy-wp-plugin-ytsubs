@@ -143,6 +143,8 @@ class Youtube_Subs_Widget extends WP_Widget {
 		
 		$instance['layout'] = ( ! empty( $new_instance['layout'] ) ) ? sanitize_text_field( $new_instance['layout'] ) : '';
 
+		$instance['count'] = ( ! empty( $new_instance['count'] ) ) ? sanitize_text_field( $new_instance['count'] ) : '';
+		
 		return $instance;
 	}
 
