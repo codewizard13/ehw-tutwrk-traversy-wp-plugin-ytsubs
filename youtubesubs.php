@@ -28,4 +28,4 @@ function register_youtubesubs() {
 // Hook in function
 add_action ('widgets_init', 'register_youtubesubs');
 
-/* WORKS SO FAR -- Basic "Hello World" plugin */
+/* FINAL VERSION -- WORKS PERFECT */
